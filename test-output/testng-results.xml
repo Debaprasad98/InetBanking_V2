@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-29T18:20:02 IST" name="Default suite" finished-at="2022-10-29T18:20:16 IST" duration-ms="13860">
+  <suite started-at="2022-10-29T19:50:11 IST" name="Default suite" finished-at="2022-10-29T19:50:24 IST" duration-ms="12848">
     <groups>
     </groups>
-    <test started-at="2022-10-29T18:20:02 IST" name="Default test" finished-at="2022-10-29T18:20:16 IST" duration-ms="13860">
+    <test started-at="2022-10-29T19:50:11 IST" name="Default test" finished-at="2022-10-29T19:50:24 IST" duration-ms="12848">
       <class name="com.InetBanking.TestCases.TC_LoginDDT_002">
-        <test-method is-config="true" signature="extentreport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T18:20:02 IST" name="extentreport" finished-at="2022-10-29T18:20:02 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="extentreport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T19:50:11 IST" name="extentreport" finished-at="2022-10-29T19:50:11 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentreport -->
-        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T18:20:02 IST" name="Lunchbrowser" finished-at="2022-10-29T18:20:15 IST" duration-ms="13073" status="PASS">
+        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T19:50:11 IST" name="Lunchbrowser" finished-at="2022-10-29T19:50:23 IST" duration-ms="12087" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lunchbrowser -->
-        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T18:20:15 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-10-29T18:20:15 IST" duration-ms="0" status="FAIL">
+        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T19:50:23 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-10-29T19:50:23 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
@@ -49,8 +49,8 @@ at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
-at com.InetBanking.Utilities.XLUtils.getRowCount(XLUtils.java:37)
-at com.InetBanking.TestCases.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:48)
+at com.InetBanking.Utilities.XLUtils.getRowCount(XLUtils.java:35)
+at com.InetBanking.TestCases.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -68,11 +68,11 @@ at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T18:20:15 IST" name="closebrowser" finished-at="2022-10-29T18:20:15 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T19:50:23 IST" name="closebrowser" finished-at="2022-10-29T19:50:23 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="FlushReport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T18:20:15 IST" name="FlushReport" finished-at="2022-10-29T18:20:16 IST" duration-ms="423" status="PASS">
+        <test-method is-config="true" signature="FlushReport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T19:50:23 IST" name="FlushReport" finished-at="2022-10-29T19:50:24 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FlushReport -->

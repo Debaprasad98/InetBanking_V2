@@ -1,5 +1,6 @@
 package com.InetBanking.TestCases;
 
+import java.io.IOException;
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -7,12 +8,12 @@ import org.testng.annotations.*;
 import com.InetBanking.PageObjects.LoginPage;
 import com.InetBanking.Utilities.XLUtils;
 
-public class TC_LoginDDT_002 extends BaseClass {
+public class TC_LoginDDT_002 extends BaseClass{
 
 	public static LoginPage lp;
 
 	@Test(dataProvider="LoginData")
-	public void loginDDT(String user,String pwd) throws Throwable {
+	public void loginDDT(String user,String pwd) throws InterruptedException {
 		lp=new LoginPage(driver);
 		Thread.sleep(3000);
 		lp.setusername(user);
@@ -42,7 +43,7 @@ public class TC_LoginDDT_002 extends BaseClass {
 	}
 
 	@DataProvider(name="LoginData")
-	public String [][] getData() throws Throwable {
+	public String [][] getData() throws IOException {
 		String path="C:\\Users\\debap\\eclipse-workspace\\InetBanking_V2\\src\\test\\java\\com\\InetBanking\\TestData\\LoginData.xlsx";
 		XLUtils xlutil=new XLUtils(path);
 		int rownum=XLUtils.getRowCount("Sheet1");
@@ -57,4 +58,5 @@ public class TC_LoginDDT_002 extends BaseClass {
 		}
 		return logindata;
 	}
+	
 }

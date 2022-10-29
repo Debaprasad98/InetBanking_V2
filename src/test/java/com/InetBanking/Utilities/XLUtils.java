@@ -29,8 +29,6 @@ public class XLUtils {
 		this.path=path;
 	}
 
-
-
 	public static int getRowCount(String xlsheet) throws IOException 
 	{
 		fi=new FileInputStream(path);
@@ -41,7 +39,6 @@ public class XLUtils {
 		fi.close();
 		return rowcount;		
 	}
-
 
 	public static int getCellCount(String xlsheet,int rownum) throws IOException
 	{
@@ -55,7 +52,6 @@ public class XLUtils {
 		return cellcount;
 	}
 
-
 	public static String getCellData(String xlsheet,int rownum,int colnum) throws IOException
 	{
 		fi=new FileInputStream(path);
@@ -63,12 +59,11 @@ public class XLUtils {
 		sheet=wb.getSheet(xlsheet);
 		row=sheet.getRow(rownum);
 		cell=row.getCell(colnum);
+		DataFormatter formatter = new DataFormatter();
 		String data;
 		try 
 		{
-			DataFormatter formatter = new DataFormatter();
-			String cellData = formatter.formatCellValue(cell);
-			return cellData;
+			 data = formatter.formatCellValue(cell);
 		}
 		catch (Exception e) 
 		{
