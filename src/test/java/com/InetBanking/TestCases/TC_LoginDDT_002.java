@@ -43,7 +43,7 @@ public class TC_LoginDDT_002 extends BaseClass {
 
 	@DataProvider(name="LoginData")
 	public String [][] getData() throws Throwable {
-		String path="C:\\Users\\debap\\eclipse-workspace\\InetBanking_V3\\src\\test\\java\\com\\InetBanking\\TestData\\LoginData.xlsx";
+		String path="C:\\Users\\debap\\eclipse-workspace\\InetBanking_V2\\src\\test\\java\\com\\InetBanking\\TestData\\LoginData.xlsx";
 		XLUtils xlutil=new XLUtils(path);
 		int rownum=XLUtils.getRowCount("Sheet1");
 		int cellnum=XLUtils.getCellCount("Sheet1",1);
