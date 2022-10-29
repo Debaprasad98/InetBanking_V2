@@ -11,7 +11,6 @@ import com.InetBanking.Utilities.XLUtils;
 public class TC_LoginDDT_002 extends BaseClass{
 
 	public static LoginPage lp;
-
 	@Test(dataProvider="LoginData")
 	public void loginDDT(String user,String pwd) throws InterruptedException {
 		lp=new LoginPage(driver);
