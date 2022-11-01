@@ -1,82 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-29T21:24:42 IST" name="Default suite" finished-at="2022-10-29T21:24:51 IST" duration-ms="8714">
+  <suite started-at="2022-11-01T17:21:35 IST" name="InetBanking_V2" finished-at="2022-11-01T17:23:09 IST" duration-ms="94060">
     <groups>
     </groups>
-    <test started-at="2022-10-29T21:24:42 IST" name="Default test" finished-at="2022-10-29T21:24:51 IST" duration-ms="8714">
-      <class name="com.InetBanking.TestCases.TC_LoginDDT_002">
-        <test-method is-config="true" signature="extentreport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T21:24:42 IST" name="extentreport" finished-at="2022-10-29T21:24:42 IST" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentreport -->
-        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T21:24:42 IST" name="Lunchbrowser" finished-at="2022-10-29T21:24:50 IST" duration-ms="8086" status="PASS">
+    <test started-at="2022-11-01T17:21:35 IST" name="Banking App Test" finished-at="2022-11-01T17:23:09 IST" duration-ms="94060">
+      <class name="com.InetBanking.TestCases.TC_AddCustomerTest_003">
+        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_AddCustomerTest_003@1bb5a082]" started-at="2022-11-01T17:21:56 IST" name="Lunchbrowser" finished-at="2022-11-01T17:22:11 IST" duration-ms="14651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Lunchbrowser -->
-        <test-method signature="loginDDT(java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T21:24:50 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-10-29T21:24:50 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:791)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
-at com.InetBanking.Utilities.XLUtils.getRowCount(XLUtils.java:35)
-at com.InetBanking.TestCases.TC_LoginDDT_002.getData(TC_LoginDDT_002.java:48)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 25 more
-Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-... 32 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="addNewCustomer()[pri:0, instance:com.InetBanking.TestCases.TC_AddCustomerTest_003@1bb5a082]" started-at="2022-11-01T17:22:11 IST" name="addNewCustomer" finished-at="2022-11-01T17:22:20 IST" duration-ms="8864" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDDT -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T21:24:50 IST" name="closebrowser" finished-at="2022-10-29T21:24:51 IST" duration-ms="141" status="PASS">
+        </test-method> <!-- addNewCustomer -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_AddCustomerTest_003@1bb5a082]" started-at="2022-11-01T17:22:20 IST" name="closebrowser" finished-at="2022-11-01T17:22:20 IST" duration-ms="177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="FlushReport()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@4218d6a3]" started-at="2022-10-29T21:24:51 IST" name="FlushReport" finished-at="2022-10-29T21:24:51 IST" duration-ms="322" status="PASS">
+      </class> <!-- com.InetBanking.TestCases.TC_AddCustomerTest_003 -->
+      <class name="com.InetBanking.TestCases.TC_LoginDDT_002">
+        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:20 IST" name="Lunchbrowser" finished-at="2022-11-01T17:22:31 IST" duration-ms="11231" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FlushReport -->
+        </test-method> <!-- Lunchbrowser -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:32 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:22:41 IST" duration-ms="8589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450211]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:41 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:22:45 IST" duration-ms="4445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450212]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUzb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:45 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:22:51 IST" duration-ms="5714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450213]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:51 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:22:57 IST" duration-ms="6373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450214]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUzb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:22:57 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:23:04 IST" duration-ms="6580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450211]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUza]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:23:04 IST" name="loginDDT" data-provider="LoginData" finished-at="2022-11-01T17:23:09 IST" duration-ms="4934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr450216]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AgYbUzb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_LoginDDT_002@78691363]" started-at="2022-11-01T17:23:09 IST" name="closebrowser" finished-at="2022-11-01T17:23:09 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
       </class> <!-- com.InetBanking.TestCases.TC_LoginDDT_002 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.InetBanking.TestCases.TC_Login_001">
+        <test-method is-config="true" signature="Lunchbrowser()[pri:0, instance:com.InetBanking.TestCases.TC_Login_001@77888435]" started-at="2022-11-01T17:21:35 IST" name="Lunchbrowser" finished-at="2022-11-01T17:21:50 IST" duration-ms="14680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lunchbrowser -->
+        <test-method signature="VerifyHomePage()[pri:0, instance:com.InetBanking.TestCases.TC_Login_001@77888435]" started-at="2022-11-01T17:21:50 IST" name="VerifyHomePage" finished-at="2022-11-01T17:21:56 IST" duration-ms="5929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePage -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.InetBanking.TestCases.TC_Login_001@77888435]" started-at="2022-11-01T17:21:56 IST" name="closebrowser" finished-at="2022-11-01T17:21:56 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- com.InetBanking.TestCases.TC_Login_001 -->
+    </test> <!-- Banking App Test -->
+  </suite> <!-- InetBanking_V2 -->
 </testng-results>

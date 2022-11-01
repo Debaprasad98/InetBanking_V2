@@ -12,17 +12,19 @@ public class TC_LoginDDT_002 extends BaseClass{
 
 	public static LoginPage lp;
 	@Test(dataProvider="LoginData")
-	public void loginDDT(String user,String pwd) throws InterruptedException {
+	public void loginDDT(String user,String pwd,String res) throws InterruptedException {
 		lp=new LoginPage(driver);
-		Thread.sleep(3000);
 		lp.setusername(user);
-		Thread.sleep(3000);
+		log.info("Username Entered");
 		lp.setpassword(pwd);
+		log.info("Password Entered");
 		lp.setlogin();
+		log.info("Clicked on login button");
 		if (isAlertPresent()==true) {
 			driver.switchTo().alert().accept();//Close invalid credentials Alert
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(false);
+			Thread.sleep(2000);
+			Assert.assertTrue(true);
 		} else {
 			lp.setlogout();
 			driver.switchTo().alert().accept();//Close Logout Alert
@@ -57,5 +59,5 @@ public class TC_LoginDDT_002 extends BaseClass{
 		}
 		return logindata;
 	}
-	
+
 }

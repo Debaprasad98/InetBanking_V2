@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="InetBanking_V2">
+
+	<listeners>
+		<listener class-name="com.InetBanking.Utilities.Reporting"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Banking App Test">
+		<classes>
+			<class name="com.InetBanking.TestCases.TC_Login_001" />
+			<class name="com.InetBanking.TestCases.TC_AddCustomerTest_003" />
+			<class name="com.InetBanking.TestCases.TC_LoginDDT_002" />
+		</classes>
+	</test> <!-- Banking App Test -->
+</suite> <!-- InetBanking_V2 -->
