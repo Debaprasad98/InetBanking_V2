@@ -11,6 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.*;
 
 import com.InetBanking.Utilities.ReadConfig;
+import com.InetBanking.Utilities.ReadExportValue;
 
 public class BaseClass {
 	public static WebDriver driver;
@@ -20,6 +21,9 @@ public class BaseClass {
 	public String username=readconfig.getusername();
 	public String password=readconfig.getpassword();
 	public String browser=readconfig.getbrowser();
+	
+	ReadExportValue expval=new ReadExportValue();
+	String exportval=expval.getexportValue();
 
 
 	@BeforeClass

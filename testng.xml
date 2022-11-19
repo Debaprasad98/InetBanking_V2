@@ -11,6 +11,7 @@
 			<class name="com.InetBanking.TestCases.TC_Login_001" />
 			<class name="com.InetBanking.TestCases.TC_AddCustomerTest_003" />
 			<class name="com.InetBanking.TestCases.TC_LoginDDT_002" />
+			<class name="com.InetBanking.TestCases.TC_EditCustomerTest_004"/>
 		</classes>
 	</test> <!-- Banking App Test -->
 </suite> <!-- InetBanking_V2 -->

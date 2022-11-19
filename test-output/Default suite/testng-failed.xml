@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.InetBanking.TestCases.TC_LoginDDT_002">
+      <class name="com.InetBanking.TestCases.TC_EditCustomerTest_004">
         <methods>
           <include name="Lunchbrowser"/>
-          <include name="loginDDT" invocation-numbers="1 2 3 4 5"/>
+          <include name="editCustomer"/>
           <include name="closebrowser"/>
         </methods>
-      </class> <!-- com.InetBanking.TestCases.TC_LoginDDT_002 -->
+      </class> <!-- com.InetBanking.TestCases.TC_EditCustomerTest_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
